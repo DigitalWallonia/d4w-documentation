@@ -1649,6 +1649,7 @@ POST d4w-entries_staging/_search/template
 * `fields.founders.fr.title.${language}`
 * `fields.categories.fr.title.${language}`
 * `fields.programs.fr.title.${language}`
+
 Returns all `contentType` with `fields.endDate.fr` descending (if exists) matching:
 * Must exist `fields.title.${language}` or/and `fields.programs.fr.slug.${language}`
 * Must `query_string` _[expression from elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html)_
