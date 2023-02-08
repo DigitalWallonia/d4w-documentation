@@ -5,6 +5,7 @@ a \* indicates that this parameter is mandatory so should be present but could b
 ## ambition-search-template
 
 Returns all `person` _weight 50_, `program` _weight 45_, `post` _weight 35_, `event` _weight 15_, `profile` _weight 10_ and `pressReview` _weight 5_ matching `fields.ambitions.fr.slug.${LANGUAGE}` slug
+
 It will order the documents by `endDate lte now` _weight 30_ and `endDate lte now` _weight 1_
 
 Parameters:
