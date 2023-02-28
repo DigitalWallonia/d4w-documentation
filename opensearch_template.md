@@ -379,8 +379,8 @@ POST d4w-entries_staging/_search/template
 ## filter-next-event-search-template
 
 Returns all `event` matching:
-* Must `fields.categories.fr.slug.${language}`
-* Must `fields.programs.fr.slug.${language}`
+* Should `fields.categories.fr.slug.${language}`
+* Should `fields.programs.fr.slug.${language}`
 * Must `fields.clientSites.fr.name.fr`
 * Should `fields.type.fr`
 * Should `fields.hosts.fr.slug.en`
@@ -737,7 +737,7 @@ Returns all `pressReview` matching:
 * must exist `fields.shortDescription.${language}`
 * must exist `fields.source.${language}`
 * must exist `fields.publishedDate.fr`
-* Must `fields.programs.fr.slug.${language}`
+* Should `fields.programs.fr.slug.${language}`
 * Must `fields.categories.fr.slug.${language}`
 * Must `fields.quotedProfiles.fr.slug.${language}`
 * Must `fields.clientSites.fr.name.fr`

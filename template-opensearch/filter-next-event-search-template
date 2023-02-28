@@ -14,8 +14,8 @@
                         {"exists":{"field":"fields.slug.{{language}}"}},
                         {"range":{"fields.endDate.fr":{"gte":"now"}}},
                         {"range":{"fields.endPublicationDate.fr":{"gte":"now"}}},
-                        {"bool":{"must":{{#toJson}}categoriesSlugList{{/toJson}}}},
-                        {"bool":{"must":{{#toJson}}programsSlugList{{/toJson}}}},
+                        {"bool":{"should":{{#toJson}}categoriesSlugList{{/toJson}}}},
+                        {"bool":{"should":{{#toJson}}programsSlugList{{/toJson}}}},
                         {"bool":{"should":{{#toJson}}profileLinkList{{/toJson}}}},
                         {"bool":{"should":{{#toJson}}eventTypeList{{/toJson}}}},
                         {

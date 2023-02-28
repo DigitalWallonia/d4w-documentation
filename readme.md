@@ -228,6 +228,100 @@ a class="d4wentry-id-16hlZMpDwjFBCFxHC7hqcI d4entry-type-profile d4entry-entry-i
 ```html
 <li class='d4entry-list-item'></ul>a list item</ul></li>
 ```
+* `table`
+  * **css classes**: `d4entry-table`
+```html
+<table class='d4entry-table'>
+  <tr class='d4entry-table-row'>
+    <th class='d4entry-table-header-cell'>
+      <p class='d4wentry-paragraph'>COL Ref</p>
+    </th>
+    <th class='d4entry-table-header-cell'>
+      <p class='d4wentry-paragraph'>data 1</p>
+    </th>
+    <th class='d4entry-table-header-cell'>
+      <p class='d4wentry-paragraph'>data 2</p>
+    </th>
+    <th class='d4entry-table-header-cell'>
+      <p class='d4wentry-paragraph'>data 3</p>
+    </th>
+  </tr>
+  <tr class='d4entry-table-row'>
+    <td class='d4entry-table-cell'>
+      <p class='d4wentry-paragraph'>ref L1</p>
+    </td>
+    <td class='d4entry-table-cell'>
+      <p class='d4wentry-paragraph'>data 1 L1</p>
+    </td>
+    <td class='d4entry-table-cell'>
+      <p class='d4wentry-paragraph'>Data 2 L1</p>
+    </td>
+    <td class='d4entry-table-cell'>
+      <p class='d4wentry-paragraph'>data 3 L1</p>
+    </td>
+  </tr>
+  <tr class='d4entry-table-row'>
+    <td class='d4entry-table-cell'>
+      <p class='d4wentry-paragraph'>Ref L2</p>
+    </td>
+    <td class='d4entry-table-cell'>
+      <p class='d4wentry-paragraph'>data 1 L2</p>
+    </td>
+    <td class='d4entry-table-cell'>
+      <p class='d4wentry-paragraph'>Data 2 L2</p>
+    </td>
+    <td class='d4entry-table-cell'>
+      <p class='d4wentry-paragraph'>data 3 L2</p>
+    </td>
+  </tr>
+  <tr class='d4entry-table-row'>
+    <td class='d4entry-table-cell'>
+      <p class='d4wentry-paragraph'>Ref L3</p>
+    </td>
+    <td class='d4entry-table-cell'>
+      <p class='d4wentry-paragraph'>data 1 L3</p>
+    </td>
+    <td class='d4entry-table-cell'>
+      <p class='d4wentry-paragraph'>Data 2 L3</p>
+    </td>
+    <td class='d4entry-table-cell'>
+      <p class='d4wentry-paragraph'>data 3 L3</p>
+    </td>
+  </tr>
+</table>
+```
+* `table-row`
+  * **css classes**: `d4entry-table-row`
+```html
+<tr class='d4entry-table-row'>
+  <td class='d4entry-table-cell'>
+    <p class='d4wentry-paragraph'>Ref L3</p>
+  </td>
+  <td class='d4entry-table-cell'>
+    <p class='d4wentry-paragraph'>data 1 L3</p>
+  </td>
+  <td class='d4entry-table-cell'>
+    <p class='d4wentry-paragraph'>Data 2 L3</p>
+  </td>
+  <td class='d4entry-table-cell'>
+    <p class='d4wentry-paragraph'>data 3 L3</p>
+  </td>
+</tr>
+```
+* `table-cell`
+  * **css classes**: `d4entry-table-cell`
+```html
+<td class='d4entry-table-cell'>
+  <p class='d4wentry-paragraph'>Ref L3</p>
+</td>
+```
+* `table-header-cell`
+  * **css classes**: `d4entry-table-header-cell`
+```html
+<th class='d4entry-table-header-cell'>
+  <p class='d4wentry-paragraph'>COL Ref</p>
+</th>
+```
 
 ## Plain text conversion
 we  provide a plain text version of the following fields as well:
@@ -239,10 +333,10 @@ Please note that both of those fields are mapped _refer to mapping in elasticsea
 
 ## Opensearch templates
 
+You can find all the opensearch templates in `/template-opensearch`
 
+For more details about each templates check [the deeper look documentation](opensearch_template.md) 
 
 # Small Help Guide
 * templates
 * query guide
-
-

@@ -38,7 +38,7 @@
                             "must":{{#toJson}}categoriesSlugList{{/toJson}}}},
                         {"bool":{"must":{{#toJson}}quotedProfilesSlugList{{/toJson}}}},
                         {"bool":{"should":{{#toJson}}quotedPersonsInternalNameList{{/toJson}}}},
-                        {"bool":{"must":{{#toJson}}programsSlugList{{/toJson}}}},
+                        {"bool":{"should":{{#toJson}}programsSlugList{{/toJson}}}},
                         {
                             "bool": {
                                 "must": {{#toJson}}clientSites{{/toJson}}
