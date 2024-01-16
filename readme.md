@@ -337,6 +337,52 @@ You can find all the opensearch templates in `/template-opensearch`
 
 For more details about each templates check [the deeper look documentation](opensearch_template.md) 
 
+## ClientSites
+
+As of the 1 January 2024 the `clientSites` deprecation started in favor of `clientSitesList`. This depreacation removed the needs of links in the clientSites collection.
+
+The field `clientSitesList` has been added and will be the new field of reference going forward. It will be constructed using ascii characters only (so no `é`, `è`, `ê` `ë`, ...) and replacing spaces ` ` with dashes `-`. For example `Digital Wallonia` will become `Digital-Wallonia`
+
+**The field `clientSites` will be deprecated in favor of `clientSitesList` as of the 15 march 2024.**
+
+As a reference you can find bellow a **non-exhaustive** list of all current values of the field `clientSitesList` (last updated `01/16/2024`):
+* `AWEX`,
+* `BDI-cyber-security`,
+* `Bois-local`,
+* `CETIC`,
+* `Charleroi-Entreprendre`,
+* `Cheques-entreprises`,
+* `Circular-Wallonia`,
+* `Cluster-Cap-Construction`,
+* `Cluster-Eco-Construction`,
+* `Cluster-EquisFair`,
+* `Cluster-H2O`,
+* `Cluster-Plastiwin`,
+* `Cluster-Tweed`,
+* `Cluster-Twist`,
+* `Coworking-Digital-Wallonia`,
+* `Digital-Wallonia`,
+* `Ecole-Numerique`,
+* `Ecosysteme-circulaire`,
+* `Futurocite`,
+* `H2HubWallonia`,
+* `Inclusion`,
+* `Industrie-du-Futur-IdF`,
+* `Infopole-Cluster-Tic`,
+* `La-ferme-connectee`,
+* `Living-cities`,
+* `Mind-Market`,
+* `Reseau-IA`,
+* `ReWaN`,
+* `STEAM`,
+* `Strategie-S3`,
+* `TRAIL`,
+* `Walchain`,
+* `WalDigiFarm`,
+* `WalHub`,
+* `WalTech`,
+* `W-in-G`
+						
 # Small Help Guide
 * templates
 * query guide
