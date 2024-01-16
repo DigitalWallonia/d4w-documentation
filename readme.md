@@ -339,7 +339,7 @@ For more details about each templates check [the deeper look documentation](open
 
 ## ClientSites
 
-As of the 1 January 2024 the `clientSites` deprecation started in favor of `clientSitesList`. This depreacation removed the needs of links in the clientSites collection.
+As of the 1 January 2024 the `clientSites` deprecation started in favor of `clientSitesList`. This deprecation removed the needs of links in the clientSites collection.
 
 The field `clientSitesList` has been added and will be the new field of reference going forward. It will be constructed using ascii characters only (so no `é`, `è`, `ê` `ë`, ...) and replacing spaces ` ` with dashes `-`. For example `Digital Wallonia` will become `Digital-Wallonia`
 
