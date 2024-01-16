@@ -24,7 +24,7 @@ POST d4w-entries_staging/_search/template
         "clientSites": [
             {
                 "term": {
-                        "fields.clientSites.fr.name.fr": "Digital Wallonia"
+                        "fields.clientSitesList.fr": "Digital-Wallonia"
                     }
             }
         ],
@@ -56,7 +56,7 @@ POST d4w-entries_staging/_search/template
         "clientSites": [
             {
                 "term": {
-                        "fields.clientSites.fr.name.fr": "Digital Wallonia"
+                        "fields.clientSitesList.fr": "Digital-Wallonia"
                     }
             }
         ],
@@ -124,7 +124,7 @@ POST d4w-entries_staging/_search/template
         "clientSites": [
             {
                 "term": {
-                        "fields.clientSites.fr.name.{{language}}": "Digital Wallonia"
+                        "fields.clientSitesList.fr": "Digital-Wallonia"
                     }
             }
         ],
@@ -163,7 +163,7 @@ POST d4w-entries_staging/_search/template
         "clientSites": [
             {
                 "term": {
-                        "fields.clientSites.fr.name.fr": "Digital Wallonia"
+                        "fields.clientSitesList.fr": "Digital-Wallonia"
                     }
             }
         ],
@@ -201,7 +201,7 @@ POST d4w-entries_staging/_search/template
         "clientSites": [
             {
                 "term": {
-                        "fields.clientSites.fr.name.fr": "Digital Wallonia"
+                        "fields.clientSitesList.fr": "Digital-Wallonia"
                     }
             }
         ],
@@ -230,7 +230,7 @@ POST d4w-entries_staging/_search/template
         "clientSites": [
             {
                 "term": {
-                        "fields.clientSites.fr.name.fr": "Digital Wallonia"
+                        "fields.clientSitesList.fr": "Digital-Wallonia"
                     }
             }
         ],
@@ -308,7 +308,7 @@ POST d4w-entries_staging/_search/template
          "clientSites": [
             {
                 "term": {
-                        "fields.clientSites.fr.name.fr": "Digital Wallonia"
+                        "fields.clientSitesList.fr": "Digital-Wallonia"
                     }
             }
         ],
@@ -381,7 +381,7 @@ POST d4w-entries_staging/_search/template
 Returns all `event` matching:
 * Should `fields.categories.fr.slug.${language}`
 * Should `fields.programs.fr.slug.${language}`
-* Must `fields.clientSites.fr.name.fr`
+* Must `fields.clientSitesList.fr`
 * Should `fields.type.fr`
 * Should `fields.hosts.fr.slug.en`
 * Should filter by regions, possible regions are:
@@ -426,7 +426,7 @@ POST d4w-entries_staging/_search/template
         "clientSites": [
             {
                 "term": {
-                        "fields.clientSites.fr.name.fr": "Digital Wallonia"
+                        "fields.clientSitesList.fr": "Digital-Wallonia"
                     }
             }
         ],
@@ -540,7 +540,7 @@ Returns all `person` matching:
 * Must exist `fields.slug.${language}`
 * Must `fields.programs.fr.slug.${language}`
 * Must `fields.categories.fr.slug.${language}`
-* Must `fields.clientSites.fr.name.fr`
+* Must `fields.clientSitesList.fr`
 * Should filter by regions, possible regions are:
   * `brabantWallon`
   * `liege`
@@ -580,7 +580,7 @@ POST d4w-entries_staging/_search/template
         "clientSites": [
             {
                 "term": {
-                        "fields.clientSites.fr.name.fr": "Digital Wallonia"
+                        "fields.clientSitesList.fr": "Digital-Wallonia"
                     }
             }
         ],
@@ -668,7 +668,7 @@ Returns all `post` matching:
 * must exist `fields.publishedDate.fr`
 * Must `fields.programs.fr.slug.${language}`
 * Must `fields.categories.fr.slug.${language}`
-* Must `fields.clientSites.fr.name.fr`
+* Must `fields.clientSitesList.fr`
 * Should `fields.type.fr`
 
 Parameters:
@@ -703,7 +703,7 @@ POST d4w-entries_staging/_search/template
         "clientSites": [
             {
                 "term": {
-                        "fields.clientSites.fr.name.fr": "Digital Wallonia"
+                        "fields.clientSitesList.fr": "Digital-Wallonia"
                     }
             }
         ],
@@ -740,7 +740,7 @@ Returns all `pressReview` matching:
 * Should `fields.programs.fr.slug.${language}`
 * Must `fields.categories.fr.slug.${language}`
 * Must `fields.quotedProfiles.fr.slug.${language}`
-* Must `fields.clientSites.fr.name.fr`
+* Must `fields.clientSitesList.fr`
 * Should `fields.quotedPersons.fr.internalName.${language}.keyword`
 
 Parameters:
@@ -764,7 +764,7 @@ POST d4w-entries_staging/_search/template
         "clientSites": [
             {
                 "term": {
-                        "fields.clientSites.fr.name.fr": "Digital Wallonia"
+                        "fields.clientSitesList.fr": "Digital-Wallonia"
                     }
             }
         ],
@@ -817,7 +817,7 @@ Returns all `profile` matching:
 * must exist `fields.slug.${language}`
 * Must `fields.programs.fr.slug.${language}`
 * Must `fields.categories.fr.slug.${language}`
-* Must `fields.clientSites.fr.name.fr`
+* Must `fields.clientSitesList.fr`
 * Must filter by boundingbox coordonates (`top_right` and `bottom_left`)
 * Must filter by regions, possible regions are:
   * `brabantWallon`
@@ -947,7 +947,7 @@ POST d4w-entries_staging/_search/template
         "clientSites": [
             {
                 "term": {
-                        "fields.clientSites.fr.name.fr": "Digital Wallonia"
+                        "fields.clientSitesList.fr": "Digital-Wallonia"
                     }
             }
         ],
@@ -1083,7 +1083,7 @@ Returns all `profile` with an aggregation geo bounding box matching:
 * must exist `fields.slug.${language}`
 * Must `fields.programs.fr.slug.${language}`
 * Must `fields.categories.fr.slug.${language}`
-* Must `fields.clientSites.fr.name.fr`
+* Must `fields.clientSitesList.fr`
 * Must filter by boundingbox coordonates (`top_right` and `bottom_left`)
 * Must filter by regions, possible regions are:
   * `brabantWallon`
@@ -1213,7 +1213,7 @@ POST d4w-entries_staging/_search/template
         "clientSites": [
             {
                 "term": {
-                        "fields.clientSites.fr.name.fr": "Digital Wallonia"
+                        "fields.clientSitesList.fr": "Digital-Wallonia"
                     }
             }
         ],
@@ -1349,7 +1349,7 @@ Returns all `profile` matching:
 * must exist `fields.slug.${language}`
 * Must `fields.programs.fr.slug.${language}`
 * Must `fields.categories.fr.slug.${language}`
-* Must `fields.clientSites.fr.name.fr`
+* Must `fields.clientSitesList.fr`
 * Must filter by regions, possible regions are:
   * `brabantWallon`
   * `liege`
@@ -1462,7 +1462,7 @@ POST d4w-entries_staging/_search/template
         "clientSites": [
             {
                 "term": {
-                        "fields.clientSites.fr.name.fr": "Digital Wallonia"
+                        "fields.clientSitesList.fr": "Digital-Wallonia"
                     }
             }
         ],
@@ -1595,7 +1595,7 @@ POST d4w-entries_staging/_search/template
 
 Returns all `profile` in most recent `updatedDate` order matching:
 * Must `fields.ambitions.fr.slug.${language}`
-* Must `fields.clientSites.fr.name.fr`
+* Must `fields.clientSitesList.fr`
 
 Parameters:
   * \*`ambitionsSlugList`: `<list>` a list of ambition' slug we wish to match
@@ -1615,7 +1615,7 @@ POST d4w-entries_staging/_search/template
         "clientSites": [
             {
                 "term": {
-                        "fields.clientSites.fr.name.fr": "Digital Wallonia"
+                        "fields.clientSitesList.fr": "Digital-Wallonia"
                     }
             }
         ],
@@ -1661,7 +1661,7 @@ Returns all `contentType` with `fields.endDate.fr` descending (if exists) matchi
   * `event`: 15
   * `profile`: 10
   * `pressReview`: 5
-* Must `fields.clientSites.fr.name.fr`
+* Must `fields.clientSitesList.fr`
 * Should `fields.title.${language}`
 * Should `fields.shortTitle.${language}`
 * Should `fields.internalName.fr`
@@ -1686,7 +1686,7 @@ POST d4w-entries_staging/_search/template
         "clientSites": [
             {
                 "term": {
-                        "fields.clientSites.fr.name.fr": "Digital Wallonia"
+                        "fields.clientSitesList.fr": "Digital-Wallonia"
                     }
             }
         ],
