@@ -1,0 +1,5 @@
+2024-01-16␣␣Vincent J (ADN)␣␣<vincent@kaminot.com>
+	* Edited opensearch templates to reflect clientSites deprecation
+	notice
+	* Added new deprecation notice and timeframe to the readme
+	* added a changelog
